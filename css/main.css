@@ -1,0 +1,162 @@
+/***************************************************\ 
+ * Assignment 2 Master Styles
+ * Roderick Burkhardt
+ * CST 336 - Internet Programming
+\***************************************************/
+
+html {
+	font-family: 'Teko', sans-serif;
+	background-color: rgba(0,0,0,.25);
+}
+
+div#wrapper {
+	width: 80%;
+	max-width: 960px;
+	margin: 1em auto;
+	text-align: center;
+	background-color: rgba(0,0,255,1.00);
+	padding: 6px;
+	border: 6px solid rgba(255,0,0,1.00);
+}
+			
+div#inner-wrapper {
+	margin: 0;
+	background-color: rgba(255,255,255,1.00);
+	/*background-image: url('../images/battleship.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+h1#title-heading {
+	font-size: 5em;
+	line-height: 1.5em;
+	color: rgba(0,0,0,1.00);
+	margin: 0;
+	padding: 0;
+	text-shadow: .1em .1em .2em rgba(0,0,0,.5);
+}
+
+h3#message {
+	font-size: 1.5em;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 
+}
+
+h3#message span#sunk {
+	font-size: 1.75em;
+	color: rgba(255,0,0,1.00);
+	font-variant: small-caps;
+	font-weight: bold;
+	animation-duration: .5s;
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+img#title-image {
+	width: 70%;
+	margin: 1em auto;
+}
+			
+table#game {
+	margin: 2em auto;
+	border: 5px double rgba(0,0,0,1.00);
+	background-color: rgba(127,127,127,1.00);
+	/*background-color: rgba(135,206,250,1.00);*/
+}
+
+table#game tr {}
+
+table#game td {
+	color: rgba(0,0,0,.0);
+	font-size:  1em;
+	height: 2em;
+	width: 2em;
+	text-align: center;
+	border-radius: 0;
+	border: 0;
+}
+			
+table#game td.ocean {
+	background-color: rgba(128,179,230,1.00);
+}
+			
+/*table#game td.ocean:hover {
+	background-image: url('../images/crosshairs.svg');
+	background-position: center center;
+	background-size: contain;
+}*/
+
+table#game td.missed {
+	background-color: rgba(255,255,255,1.00);
+}
+
+table#game td.hit {
+	background-color: rgba(255,0,0,1.00);
+}
+			
+table#game td.ocean-go {
+	background-color: rgba(128,179,230,.75);
+}
+
+table#game td.missed-go {
+	background-color: rgba(255,255,255,.75);
+}
+
+table#game td.hit-go {
+	background-color: rgba(255,0,0,.75);
+}
+
+form.grid {
+	width: 1.99em;
+	height: 1.99em;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255,255,255,.0);
+}
+
+form.grid input[type=submit] {
+	width: 1.98em;
+	height: 1.98em;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	color: rgba(0,0,0,.0);
+	background-color: rgba(0,0,0,.00);
+	border: none;
+	border-radius: 0;
+}
+
+form.grid input[type=submit]:hover {
+	background-image: url('../images/crosshairs.svg');
+	background-position: center center;
+	background-size: contain;
+}
+
+form#new-game input[type=submit] {
+	font-size: 2em;
+	font-family: 'Teko', sans-serif;
+	border-radius: 10px;
+}
+
+footer {
+	text-align: center;
+	font-size: .85em;
+	background-color: rgba(0,0,0,.20);
+	margin: 0;
+	padding: .25em 0;
+}
+
+@keyframes blink {
+   from {
+       opacity: 1;
+   }
+   to {
+       opacity: 0;
+   }
+}
+	
